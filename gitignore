@@ -1,0 +1,8 @@
+# ignore migration files
+**/migrations/**
+
+# ignore pid files
+*.pid
+
+# ignore mydatabase
+mydatabase
