@@ -11,6 +11,6 @@ def home_en(request):
 
     return render(request, 'home/home_en.html')
 
-#def home_de(request):
-#
-#   return render(request, 'home/home_de.html')
+def home_de(request):
+
+   return render(request, 'home/home_de.html')
