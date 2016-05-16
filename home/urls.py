@@ -7,5 +7,5 @@ urlpatterns = [
     #home-page
     url(r'^$', views.home, name='home'),
     url(r'^en$', views.home_en, name='home_en'),
-    #url(r'^/de/$', views.home_de, name='home_de'),
+    url(r'^de$', views.home_de, name='home_de'),
 ]
