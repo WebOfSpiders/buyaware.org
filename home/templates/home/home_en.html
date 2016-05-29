@@ -141,13 +141,54 @@
 	      <p>PR advisor</p>
 	    </div>
 	    <div class="col-lg-4 text-center">
-	      <img src="{% static "img/profiles/christian.png" %}" alt="member's name" class="img-circle center-block" style="width:200px;height:200px;">
+	      <button type="button" class="btn-link" data-toggle="modal" data-target="#myModal"><img src="{% static "img/profiles/christian.png" %}" alt="member's name" class="img-circle center-block" style="width:200px;height:200px;"></button>
 	      <h4>Christian Küttel</h4>
 	      <p>IT consultant</p>
 	    </div>
 	  </div>
 	</div>
       </div>
+
+ <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div style=background-color:#5cb85c class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 style="color:black;">Christian Küttel</h4>
+        </div>
+        <div class="modal-body">
+          <p style="color:black;">Christian Küttel is a freelancer in the BuyAware team. So far, he has mainly been
+
+helping Eric with the programming for our database. Additionally he also was the guy
+
+who came up with the spiderweb as a means to visualise our assessment results. So
+
+if you need someone to explain how you can extract the information you want out of
+
+our product-spiderwebs, he’s certainly the guy to talk to!
+
+<p style="color:black;">&quot;What keeps me motivated is friends or other people who walk up to me and ask me
+
+about BuyAware and how it is developing. I also realized how much I can learn from
+
+a project like this.&quot;</p>
+
+<p style="color:black;">During weekdays Christian is busy studying mechanical engineering at the ETH. I
+
+also enjoys doing sports and being active in general.</p></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+
     </section>
 
     <!-- Contact Section -->
