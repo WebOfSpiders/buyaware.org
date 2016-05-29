@@ -6,3 +6,6 @@
 
 # ignore mydatabase
 mydatabase
+
+# ignore .pyc files because they are binaries.
+*.pyc

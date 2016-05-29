@@ -1,44 +1,69 @@
-{% extends "base.html" %}
-
 {% load staticfiles %}
+<!DOCTYPE html>
 
-{% block navbar %}
- <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top">Buy Aware</a>
-            </div>
+<html lang={% block language %} "en" {% endblock %}>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BuyAware - Home Page</title>
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{% static "css/freelancer.css" %}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{% static "font-awesome/css/font-awesome.min.css" %}" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+        {% block navbar %}
             
+<<<<<<< HEAD
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">Über uns</a>
+                        <a href="#about">About</a>
                     </li>
 		     <li class="page-scroll">
                         <a href="#team">Team</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">Kontakt</a>
+                        <a href="#contact">Contact</a>
                     </li>
 		    <li>
 		      <!-- Split button -->
 		      <div class="button-group">
-			<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> DE
+			<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> EN
 			  <span class="caret"></span>
 			  <span class="sr-only">Toggle Dropdown</span>
 			</button>
 			<ul class="dropdown-menu">
-			  <li><a href="{% url 'home:home_en' %}">EN</a></li>
+			  <li><a href="{% url 'home:home_de' %}">DE</a></li>
 			  <li><a href="#fr">FR</a></li>
 			</ul>
 		      </div>
@@ -46,9 +71,16 @@
               </ul>
             </div>
             <!-- /.navbar-collapse -->
-{% endblock %}
+            {% endblock %}
+=======
+        {% endblock %}
+>>>>>>> f7683be5bf162ce9d672ef376eee6ef086b74274
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
- {% block content %}
+<<<<<<< HEAD
+    {% block content %}
     <!-- Header -->
     <header>
         <div class="container">
@@ -56,7 +88,7 @@
                 <div class="col-lg-12">
                     <img class="img-responsive" src="{% static "img/logo.png" %}" alt="">
                     <div class="intro-text">
-                        <span class="skills">Intelligenter slogan.</span>
+                        <span class="skills">Make a choice you can believe in.</span>
                         <hr class="check-light">
                         <!-- span class="skills">Web Developer - Graphic Artist - User Experience Designer</span!-->
                     </div>
@@ -80,16 +112,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Über uns</h2>
+                    <h2>About</h2>
                     <hr class="check-primary">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>Wir sind eine Gruppe junger Studenten aus verschiedenen Schweizer Universitäten, die sich am Swiss Talent Forum 2015 in Thun getroffen haben. Das Swiss Talent Forum ist ein von Schweizer Jugend Forscht organisierter Think-Tank. An dieser Veranstaltung, mit dem Thema “Smart Growth and Consumption”, wurde der Grundstein für BuyAware gelegt.</p>
+                    <p>We are a group of students from several Swiss universities who have met at the Swiss Talent Forum 2015 in Thun, Switzerland, which is a think-tank organized by Swiss Youth in Science. It was at this event on the topic of Smart Growth &#38; Consumption that we laid the foundation stone for BuyAware.</p>
                 </div>
                 <div class="col-lg-4">
-                    <p>Das Ziel von BuyAware ist es, Informationslücken im Elektronik Sektor zu schliessen und damit zu einen Beitrag zu verantwortlicheren Konsumverhalten zu leiten. Dies wollen wir durch das gewährleisten von Hintergrundinformationen zu Produkten erreichen, damit der Kunde schon im vornherein über den Inhalt und Hintergrund seines Produktes informiert ist. So erhoffen wir uns eine bewusstere, individuellere und reflektierte Kaufentscheidung.</p>
+                    <p>The objective of BuyAware is to contribute to more responsible consumption by closing information gaps in the field of electronics. By providing background data on consumer goods prior to purchasing, we want to enable more conscious, individual and reflected buying decision.</p>
                 </div>
             </div>
         </div>
@@ -101,7 +133,7 @@
       <div class="container">
 	<div class="row">
 	  <div class="col-lg-12 text-center">
-            <h2>Das Team</h2>
+            <h2>Meet the team</h2>
             <hr class="check-light">
           </div>
 	  <div class="row">
@@ -152,7 +184,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Kontakt</h2>
+                    <h2>Contact Us</h2>
                     <hr class="check-primary">
                 </div>
             </div>
@@ -201,11 +233,72 @@
             </div>
         </div>
     </section>
+=======
+{% block content %}
+>>>>>>> f7683be5bf162ce9d672ef376eee6ef086b74274
     
-    {% endblock %}
+{% endblock %}
 
-{% block scripts %}
-    <!-- Contact Form JavaScript -->
-    <script src="{% static "js/jqBootstrapValidation.js" %}"></script>
-    <script src="{% static "js/contact_me.js" %}"></script>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>Switzerland</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/BuyAwareMovement/" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>About Freelancer</h3>
+                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; buyaware.org 2016
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="{% static "js/jquery.js" %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="{% static "js/classie.js" %}"></script>
+    <script src="{% static "js/cbpAnimatedHeader.js" %}"></script>
+
+    {% block scripts %}
+
     {% endblock %}
+    <!-- Custom Theme JavaScript -->
+    <script src="{% static "js/freelancer.js" %}"></script>
+
+</body>
+
+</html>
