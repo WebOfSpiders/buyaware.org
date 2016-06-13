@@ -12,6 +12,10 @@ urlpatterns = [
     # Example:
     # url(r'^test_project/', include('test_project.foo.urls')),
 
+    # Enables the language_redirect_view which redirects requests 
+    # to the same page but in an other language
+    url(r'^i18n/', include('django.conf.urls.i18n')),
+
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
