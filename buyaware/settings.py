@@ -137,3 +137,7 @@ LANGUAGES = (
     ('en', _('English')),
     ('de', _('Deutsch')),
 )
+
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
+)
