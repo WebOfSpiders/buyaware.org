@@ -64,7 +64,7 @@
 		      <div class="language_selector">
 			<form action="{% url 'set_language' %}" method="post">
 			  {% csrf_token %}
-			  <input name="next" type="hidden" value="{{ redirect_to }}" />
+			  <input name="next" type="hidden" value="/" />
 			  <select name="language">
 			  
 			  {% get_available_languages as LANGUAGES %}
