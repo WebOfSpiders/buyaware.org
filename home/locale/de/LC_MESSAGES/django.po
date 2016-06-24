@@ -105,4 +105,4 @@ msgstr "Bitte geben Sie eine Nachricht ein."
 
 #: home/templates/home/home.html:166
 msgid "Send"
-msgstr "Schicken"
+msgstr "Senden"
